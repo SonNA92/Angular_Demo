@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "9a453c57-4164-4682-97ea-a0fe45101770"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -28,12 +31,24 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/theme.less",
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {

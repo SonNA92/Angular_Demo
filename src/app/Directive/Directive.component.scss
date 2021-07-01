@@ -1,0 +1,33 @@
+.ghe{
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    
+}
+.gheDaDat{
+    cursor: no-drop;
+    background-color: red !important;
+    color: white;
+}
+.gheVip{
+    border: 1px solid orange;
+}
+[nz-carousel-content] {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  h3 {
+    color: #fff;
+    margin-bottom: 0;
+  }
